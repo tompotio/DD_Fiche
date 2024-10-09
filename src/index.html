@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Feuille de personnage</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="contenu">
+        <ul id="entete">
+          <li>
+            <label for="nom">Nom:</label>
+            <input
+              type="text"
+              id="nom"
+              class="champ"
+              placeholder="Veuillez choisir un nom"
+            />
+          </li>
+          <li>
+            <label for="classe">Classe:</label>
+            <select id="classe" class="champ">
+              <option value="" selected disabled>
+                --Veuillez choisir une classe--
+              </option>
+            </select>
+          </li>
+        </ul>
+
+        <h1 id="enteteAttributs">Attributs (0/9)</h1>
+
+        <ul id="attributs">
+          <!-- ATTRIBUTS -->
+        </ul>
+
+        <h1 id="enteteCompetences">Compétences (0/0)</h1>
+
+        <ul id="competences">
+          <!-- COMPETENCES -->
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

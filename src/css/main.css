@@ -1,0 +1,121 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-width: 600px;
+  min-height: 800px;
+  height: 100%;
+  background-color: #faebd7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 600px;
+  height: 800px;
+  background-image: url("../img/bord-dragon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#contenu {
+  margin: 130px 120px 60px 80px;
+}
+
+h1 {
+  font-size: x-large;
+  text-align: center;
+}
+
+h2 {
+  font-size: medium;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+option {
+  background-color: #faebd7;
+}
+
+.champ {
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+#entete label {
+  font-size: larger;
+  width: 70px;
+}
+
+#entete .champ {
+  flex: auto;
+}
+
+#attributs,
+#competences {
+  column-count: 2;
+  column-gap: 40px;
+}
+
+#attributs label,
+#competences label {
+  flex: auto;
+}
+
+#attributs .champ,
+#competences .champ {
+  max-width: 30px;
+  text-align: center;
+}
+
+#attributs .champ.principal {
+  font-weight: bold;
+  color: chocolate;
+}
+
+#attributs .champ {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+#attributs .champ::-webkit-outer-spin-button,
+#attributs .champ::-webkit-inner-spin-button {
+  display: none;
+}
+
+#attributs .champ:hover::-webkit-outer-spin-button,
+#attributs .champ:hover::-webkit-inner-spin-button,
+#attributs .champ:focus::-webkit-outer-spin-button,
+#attributs .champ:focus::-webkit-inner-spin-button {
+  display: inline-block;
+}
+
+#attributs .champ:hover,
+#attributs .champ:focus {
+  appearance: none;
+  -moz-appearance: none;
+}
+
+#competences input[type="checkbox"] {
+  margin-right: 5px;
+}
